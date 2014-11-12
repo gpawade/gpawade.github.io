@@ -36,9 +36,18 @@
 	"buffers":
 	[
 		{
+			"file": "ko/index.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 315,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ko/script/app.js",
+			"settings":
+			{
+				"buffer_size": 195,
 				"line_ending": "Windows"
 			}
 		}
@@ -54,6 +63,18 @@
 				"Set Syntax: JSON"
 			],
 			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
 				"jav",
 				"Set Syntax: JavaScript"
 			],
@@ -66,24 +87,12 @@
 				"Set Syntax: SQL"
 			],
 			[
-				"jso",
-				"Set Syntax: JSON"
-			],
-			[
 				"javascri",
 				"Set Syntax: JavaScript"
 			],
 			[
 				"xml",
 				"Set Syntax: XML"
-			],
-			[
-				"java",
-				"Set Syntax: JavaScript"
-			],
-			[
-				"html",
-				"Set Syntax: HTML"
 			],
 			[
 				"Package Control: inst",
@@ -208,10 +217,14 @@
 	},
 	"expanded_folders":
 	[
-		"/E/Test/gpawade.github.io"
+		"/E/Test/gpawade.github.io",
+		"/E/Test/gpawade.github.io/data"
 	],
 	"file_history":
 	[
+		"/E/Test/gpawade.github.io/data/customers.json",
+		"/E/Test/gpawade.github.io/data/posts.json",
+		"/E/Test/gpawade.github.io/data/product.json",
 		"/C/Users/gpawade/AppData/Roaming/Sublime Text 3/Packages/JsFormat/Default (Windows).sublime-keymap",
 		"/C/Users/gpawade/Desktop/Requirejs.js",
 		"/C/Users/gpawade/Dropbox/SublimeWork/Project/RoviaActionPlan",
@@ -336,29 +349,58 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "ko/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 315,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								169,
+								169
 							]
 						],
 						"settings":
 						{
 							"is_xml": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ko/script/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
