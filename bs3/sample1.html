@@ -7,7 +7,7 @@
     <title>Sample1</title>
 
     <!-- Bootstrap -->
-    <link href="/ref/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../ref/dist/css/bootstrap.min.css" rel="stylesheet">
 
     
   </head>
@@ -23,18 +23,192 @@
   	<!-- End Google Tag Manager -->
     
     
+    <div class="container">
+      <h1>Container</h1>
+    </div><!-- End Container-->
+
 
     <div class="container-fluid">
-      <h1>Sample1</h1>
+      <h1>Container Fluid</h1>
 
-    </div>
+      <hr />
+      <div class="row">
+        <div class="col-sm-2">col 2</div>
+        <div class="col-sm-2">col 2</div>
+        <div class="col-sm-2">col 2</div>
+        <div class="col-sm-2">col 2</div>
+        <div class="col-sm-2">col 2</div>
+        <div class="col-sm-2">col 2</div>
+      </div>
 
+      <div class="row">
+        <div class="col-sm-4">col 4</div>
+        <div class="col-sm-4">col 4</div>
+        <div class="col-sm-4">col 4</div>
+      </div><!--End row-->
+
+      <div class="row">
+        <div class="col-sm-6">col 6</div>
+        <div class="col-sm-6">col 6</div>
+        
+      </div><!--End row-->
+
+      <blockquote class="blockquote-reverse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+      </blockquote>
+      
+      <hr/>
+      <h3>Form</h3>
+      <form >
+          <div class="form-group">
+              <label for="name">Enter your name:</label>
+              <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="form-group has-feedback">
+              <label for="email">Enter your email:</label>
+              <input type="text" class="form-control" id="email">
+              <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+          </div>
+          <div class="form-group has-error has-feedback">
+              <label for="phone">Enter your phone:</label>
+              <input type="text" class="form-control" id="phone">
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+      <hr/>
+      <h3>Inline form</h3>
+      <form class="form-inline">
+          <div class="form-group form-group-lg">
+              <label class="sr-only" for="name">Enter your name:</label>
+              <input type="text" class="form-control" id="name" placeholder="name" />
+          </div>
+          <div class="form-group" >
+              <label class="sr-only" for="email">Enter your email:</label>
+              <input type="text" class="form-control" id="email" placeholder="email">
+
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon">$</div>
+              <input typ="text" class="form-control" />
+              <div class="input-group-addon">.00</div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      
+      <hr/>
+
+      <h3>Control Sizing</h3>
+
+      <div class="form-group">
+          <input type="text" class="form-control"/>
+      </div>
+      <div class="form-group">
+          <input type="text" class="form-control input-sm" placeholder=".input-sm" />
+      </div>
+      <div class="form-group">
+          <input type="text" class="form-control input-md" placeholder="input-md" />
+      </div>
+      <div class="form-group">
+          <input type="text" class="form-control input-lg" placeholder="input-lg" />
+      </div>
+
+      <hr />
+
+      <h1 class="text-primary">Component</h1>
+
+      <hr />
+      <h2>Dropdown</h2>
+      <div class="form-group">
+          <div class="dropdown">
+              <button class="btn btn-info " type="button" data-toggle="dropdown">
+                  Dropdown <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu " role="menu">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li><a href="#">Action</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <h2>Button Group </h2>
+
+      <div class="form-group">
+          <div class="btn-group">
+              <button class="btn btn-default">1</button>
+              <button class="btn btn-default">2</button>
+              <button class="btn btn-default">3</button>
+          </div>
+      </div>
+
+      <h2>Button Toolbar <h2>
+
+      <div class="form-group">
+          <div class="btn-toolbar">
+              <div class="btn-group">
+                  <button class="btn btn-default ">1</button>
+                  <button class="btn btn-default">2</button>
+                  <button class="btn btn-default">3</button>
+              </div>
+
+              <div class="btn-group">
+                  <button class="btn btn-default">4</button>
+                  <button class="btn btn-default">5</button>
+                  <button class="btn btn-default">6</button>
+              </div>
+          </div>
+      </div>
+
+
+      <h2> Navbar</h2>
+
+      <div class="navbar navbar-default ">
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Brand</a>
+        </div>
+        <div id="navbar1" class="collapse navbar-collapse">
+
+        </div>
+      </div>
+
+
+
+      <h2>tab</h2>
+
+      <div class="form-group">
+          <ul class="nav nav-tabs">
+            <li class="active"><a>Home</a></li>
+            <li><a>About Us</a></li>
+          </ul>
+      </div>
+
+    </div><!-- End Container Fluid-->
+
+
+    
+
+
+    <hr/>
+    <br/>
+    <br/>
 
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/ref/dist/js/bootstrap.min.js"></script>
+    <script src="../ref/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
