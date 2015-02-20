@@ -13,16 +13,53 @@
 
 	<div class="container-fluid">
 
+
 		
 	</div>
 
 
 	<script type="text/javascript">
 
+	var Customer = function(){
+		this.id = ko.observable(0);
+		this.name = ko.observable('');
+		this.phone = ko.observable('');
+		this.gender = ko.observable('');
+		this.company = ko.observable('');
+		this.email = ko.observable('');
+		this.address = ko.observable('');
+
+	};
+
+	var viewModel = {
+		list : ko.observableArray()
+
+
+	};
+
 	$.getJSON('../ref/data/customers.json', function(res){
 
 		console.log(res);
+
+		$.each(res,function(i,item){
+			 viewModel.list.push(toCustomerModel);
+		});
 	});
+
+	var toCustomerModel = function(item){
+
+		var c = new Customer();
+		c.id(item.id);
+		c.name(item.name);
+		c.phone(item.phone);
+		c.gender(item.gender);
+		c.company(item.company);
+		c.email(item.email);
+		c.address(item.address);
+
+		return c;
+	}
+
 		
 
 	</script>
