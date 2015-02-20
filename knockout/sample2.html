@@ -42,7 +42,7 @@
 		console.log(res);
 
 		$.each(res,function(i,item){
-			 viewModel.list.push(toCustomerModel);
+			 viewModel.list.push(toCustomerModel(item));
 		});
 	});
 
