@@ -12,6 +12,13 @@
 
 
 	<div class="container"> 
+
+
+		<div class="alert alert-success" data-bind="visible:successMsg">
+			<button class="close" type="button" data-dismiss="alert">X</button>
+			<p>Record added succesfully!</p>
+		</div>
+
 	 	<div class="table-responsive">
 		<table class="table table-bordered table-hover table-condensed" >
 			<tr class="info">
@@ -67,6 +74,8 @@
 		</table>
 		</div>
 		<button class="btn btn-success" data-bind="click:newrecord">New record</button>
+
+		
 		
 	</div>
 
@@ -100,6 +109,9 @@
 				this.remove();
 			else
 				this.editable(false);
+
+
+			
 		}
 
 		this.remove=function(){
@@ -112,6 +124,9 @@
 	var viewModel = {
 		list : ko.observableArray(),
 		editView : false,
+		successMsg : ko.observable(false),
+
+		errorMsg : ko.observable(false),
 
 		
 		newrecord: function(){
@@ -124,6 +139,28 @@
 		}
 
 	};
+
+	var uiAction = {
+
+		 showSuccess : function(){
+		 	viewModel.successMsg(true);
+
+			setTimeout(function(){
+				viewModel.successMsg(false);
+			}, 1000);
+		 },
+
+		 showError : function(){
+		 	viewModel.errorMsg(true);
+
+			setTimeout(function(){
+				viewModel.errorMsg(false);
+			}, 1000);
+		 },
+
+	};
+
+
 
 	ko.applyBindings(viewModel);
 
@@ -192,6 +229,7 @@
 
 
 	</script>
+
 
 
 </body>
