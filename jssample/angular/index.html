@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		<script src="lib/app.js"></script>
+	</head>
+	<body data-ng-app="todoApp">
+		<h1>Welcome to angular</h1>
+
+		<h4>TODO - APP</h4>	
+		
+		<div >
+
+			<div ng-controller="TodoListController as todoList">
+				<span> {{todoList.remaining()}} of {{todoList.todos.lenght}} remaining</span>
+
+				Filter Search : <input type="text" ng-model="todoList.query" placeholder="search todo">
+				<div>
+					<ul>
+						<li ng-repeat='todo in todoList.todos | filter:todoList.query'>
+							<input type="checkbox" ng-model="todo.done">
+							<span>{{todo.text}}</span>
+						</li>
+					</ul>
+				</div>
+				<form ng-submit="todoList.addTodo()">
+					<input type="text" data-ng-model="todoList.todoText" placeholder="Enter new todo">
+				</form>	
+			
+			</div>
+		</div>	
+
+		<br/>
+		<h4> Remote SVC</h4>
+
+			
+		<div >
+
+			<div ng-controller="personListController as personList">
+
+				<h6>{{personList.message}}</h6>
+				<table>
+					<tr>
+						<th>Id</th>
+						<th>Name</th>
+						<th>City</th>
+					</tr>
+					<tr ng-repeat="p in personList.list">
+						<td>{{p.id}}</td>
+						<td>{{p.name}}</td>
+						<td>{{p.city}}</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+
+	</body>
+</html>
